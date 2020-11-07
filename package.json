@@ -4,6 +4,9 @@
     "packages/App",
     "packages/Web"
   ],
+  "scripts": {
+    "lint": "lint-staged"
+  },
   "devDependencies": {
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
@@ -12,14 +15,9 @@
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.ts": "eslint --cache --fix",
-    "*.tsx": "eslint --cache --fix"
+    "*.js": "eslint",
+    "*.ts": "eslint",
+    "*.tsx": "eslint"
   }
 }
