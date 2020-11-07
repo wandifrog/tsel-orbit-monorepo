@@ -6,9 +6,12 @@ const ERR = 2
 
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  extends: ['prettier'],
+  plugins: ['prettier'],
+  // extends: '@react-native-community',
   reportUnusedDisableDirectives: true,
   rules: {
+    'prettier/pretiier': [ERR],
     'no-console': WRN,
     'eqeqeq': OFF,
     'indent': [ERR, 2],
