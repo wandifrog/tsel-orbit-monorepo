@@ -14,6 +14,7 @@ fixtures/
 scripts/bench/benchmarks/**/*.js
 
 # *.json
+*.html
 
 # App
 packages/**/android/
