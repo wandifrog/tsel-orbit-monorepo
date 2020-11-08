@@ -1,6 +1,11 @@
 # Third party
 **/node_modules
 node_modules
+babel.config.js
+metro.config.js
+jest.config.js
+
+# __tests__
 
 # Build products
 build/
@@ -8,8 +13,10 @@ coverage/
 fixtures/
 scripts/bench/benchmarks/**/*.js
 
+# *.json
+
 # App
-packages/App/android/
-packages/App/ios/
+packages/**/android/
+packages/**/ios/
 
 # Web
